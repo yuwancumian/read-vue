@@ -8,3 +8,4 @@ var demo = new Vue({
   })
   
 console.dir(Vue)
+console.log('console.log', Vue)
