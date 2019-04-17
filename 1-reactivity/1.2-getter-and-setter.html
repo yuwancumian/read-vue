@@ -1,23 +1,23 @@
 <script>
-    let value;
-    function convert (obj){
-        value = obj.foo;
-        Object.defineProperty(obj, 'foo', {
-            get () {
-                console.log('getter',value)
-                return value
-            },
-            set (newValue) {
-                value = newValue;
-                console.log('setter', newValue)
-            }
-        })
-    }
-    var aaa = {
-        foo: "bar"
-    }
-    convert(aaa)
-    aaa.foo
-    aaa.foo = 333;
-    aaa.foo
+let value;
+function convert (obj){
+    value = obj.foo;
+    Object.defineProperty(obj, 'foo', {
+        get () {
+            console.log('getter',value)
+            return value
+        },
+        set (newValue) {
+            value = newValue;
+            console.log('setter', newValue)
+        }
+    })
+}
+var aaa = {
+    foo: "bar"
+}
+convert(aaa)
+aaa.foo
+aaa.foo = 333;
+aaa.foo
 </script>
