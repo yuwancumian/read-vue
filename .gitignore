@@ -1,0 +1,9 @@
+/node_modules/
+/bower_components/
+/spm_modules
+.gist
+*.sublime-project
+*.sublime-workspace
+npm-debug.log
+dist
+.cache
